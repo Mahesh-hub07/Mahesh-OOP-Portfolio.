@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahesh Deshmukh - Computer Science Engineering Student Portfolio">
+    <title>Mahesh Deshmukh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toast" class="toast" role="status"></div>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">M<span>.</span></a>
+
+            <button id="menuBtn" class="menu-btn"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <div id="navLinks" class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#oop">OOP Concepts</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm <span>Mahesh Deshmukh</span></h1>
+
+                <h2>Computer Science Engineering Student</h2>
+
+                <p class="hero-description">
+                    Exploring technology, programming and creative ideas.
+                    Currently learning Object Oriented Programming and
+                    building my foundation in software development.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">
+                        Explore My Work
+                    </a>
+                    <a href="#contact" class="btn secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+                <p class="location">📍 Pune, Maharashtra, India</p>
+            </div>
+
+            <div class="hero-card reveal">
+                <div class="profile-circle">MD</div>
+                <p class="card-label">CURRENTLY PURSUING</p>
+                <h3>B.Tech CSE</h3>
+                <p>Second Year Student</p>
+                <span class="status">● Learning & Growing</span>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-content reveal">
+                <p>
+                    I'm Mahesh Deshmukh, a second-year Computer Science
+                    Engineering student at JSPM University, Wagholi, Pune.
+                </p>
+                <p>
+                    I am interested in technology, programming,
+                    problem-solving, entrepreneurship and continuous
+                    learning. I enjoy exploring new ideas and developing
+                    skills that can help me grow personally and professionally.
+                </p>
+                <p>
+                    This portfolio is created as part of my Object Oriented
+                    Programming academic submission. It represents my
+                    learning journey and understanding of programming concepts.
+                </p>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
+                <h2>Education</h2>
+            </div>
+
+            <div class="info-card reveal">
+                <span class="tag">CURRENT EDUCATION</span>
+                <h3>Bachelor of Technology (B.Tech)</h3>
+                <h4>Computer Science and Engineering</h4>
+                <p>JSPM University, Wagholi, Pune, Maharashtra</p>
+                <p>Second Year</p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">WHAT I'M LEARNING</p>
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid reveal">
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Object Oriented Programming fundamentals</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>C Programming</h3>
+                    <p>Programming fundamentals and logic</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Basic programming concepts</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS and JavaScript fundamentals</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Data Analytics</h3>
+                    <p>Exploring data analysis and interpretation</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Problem Solving</h3>
+                    <p>Logical thinking and analytical skills</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- OOP CONCEPTS -->
+        <section id="oop" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">ACADEMIC LEARNING</p>
+                <h2>Object Oriented Programming</h2>
+                <p>
+                    Explore the fundamental concepts of OOP with
+                    explanations and Java code examples.
+                </p>
+            </div>
+
+            <div class="oop-container reveal">
+                <div id="oopTabs" class="oop-tabs"
+                    role="tablist" aria-label="OOP concepts">
+                </div>
+
+                <div id="oopPanel" class="oop-panel"
+                    role="tabpanel">
+                    <h3 id="oopName"></h3>
+                    <p id="oopDef"></p>
+
+                    <div class="code-heading">
+                        <span>JAVA CODE EXAMPLE</span>
+                        <button id="copyBtn" class="copy-btn">
+                            Copy code
+                        </button>
+                    </div>
+
+                    <pre><code id="oopCode"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">MY PRACTICAL WORK</p>
+                <h2>Projects</h2>
+                <p>Academic project concepts and practical learning.</p>
+            </div>
+
+            <div class="projects-grid reveal">
+                <div class="project-card">
+                    <span class="project-number">01</span>
+                    <h3>Library Management System</h3>
+                    <p>
+                        A Java-based academic project concept for managing
+                        books, student records, book issuing and returns
+                        using object oriented programming.
+                    </p>
+                    <span class="tag">Java • OOP</span>
+                    <a href="#" data-link="projectLibrary"
+                        class="project-link">View Project ↗</a>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>Student Management System</h3>
+                    <p>
+                        An academic project concept for organizing student
+                        information, maintaining records and managing
+                        student details using Java classes and objects.
+                    </p>
+                    <span class="tag">Java • OOP</span>
+                    <a href="#" data-link="projectStudent"
+                        class="project-link">View Project ↗</a>
+                </div>
+            </div>
+
+            <p class="project-note">
+                Note: These are proposed academic projects. Implementation
+                and source code will be added as they are developed.
+            </p>
+        </section>
+
+        <!-- LEARNING JOURNEY -->
+        <section id="journey" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">BEYOND THE CLASSROOM</p>
+                <h2>My Learning Journey</h2>
+            </div>
+
+            <div class="skills-grid reveal">
+                <div class="skill-card">
+                    <h3>Technology</h3>
+                    <p>Exploring emerging technologies and software development.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Entrepreneurship</h3>
+                    <p>Learning about business, innovation and new ideas.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Communication</h3>
+                    <p>Developing presentation and interpersonal skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Contact <span>Me</span></h2>
+                <p>Feel free to connect with me through these platforms.</p>
+            </div>
+
+            <div class="contact-links reveal">
+                <a href="#" data-link="email">Email ↗</a>
+                <a href="#" data-link="github">GitHub ↗</a>
+                <a href="#" data-link="linkedin">LinkedIn ↗</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Designed & Developed by Mahesh Deshmukh</p>
+        <p>© <span id="year"></span> All Rights Reserved.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <button id="toTop" class="to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
